@@ -1,3 +1,4 @@
+# Check this page if the path ever updates https://itch.io/docs/butler/installing.html
 
 name: 'itch.io butler upload'
 description: 'itch.io: Upload your game to itch.io with butler'
@@ -38,7 +39,7 @@ runs:
       if: steps.cache-butler.outputs.cache-hit != 'true'
       shell: bash
       run: |
-        curl -L -o butler.zip https://broth.itch.ovh/butler/linux-amd64/LATEST/archive/default
+        curl -L -o butler.zip https://broth.itch.zone/butler/linux-amd64/LATEST/archive/default
         unzip butler.zip
         chmod +x butler
         ./butler -V
